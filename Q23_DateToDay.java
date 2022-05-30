@@ -6,7 +6,7 @@
 
 import java.util.*;
 import static java.lang.Integer.*;
-class Q3_DateToDay{
+class Q23_DateToDay{
     Scanner sc = new Scanner(System.in);
     String date;
     String day;
@@ -61,7 +61,7 @@ class Q3_DateToDay{
     }
 
     public static void main(String[] args) {
-        Q3_DateToDay date = new Q3_DateToDay();
+        Q23_DateToDay date = new Q23_DateToDay();
         date.input();
         date.search();
         date.rotate();

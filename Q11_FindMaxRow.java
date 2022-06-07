@@ -3,7 +3,7 @@ import java.util.Scanner;
  * Write a program in Java to create a 4 * 4 matrix and store the different numbers. 
  * Display the highest value of each row.
  */
-class Q11_FindMax{
+class Q11_FindMaxRow{
     int arr[][] = new int[4][4];
     int maxRow = 0;
     void input(){
@@ -31,7 +31,7 @@ class Q11_FindMax{
         }
     }
     public static void main(String[] args) {
-        Q11_FindMax matrix = new Q11_FindMax();
+        Q11_FindMaxRow matrix = new Q11_FindMaxRow();
         matrix.input();
         matrix.findMax();
     }

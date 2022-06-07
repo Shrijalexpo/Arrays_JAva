@@ -5,8 +5,8 @@ import java.util.Scanner;
  */
 class Q10_matrixProduct{
     int arr[][] = new int[4][4];
-    int productRow = 0;
-    int productColumn = 0;
+    int productRow = 1;
+    int productColumn = 1;
     void input(){
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter elements");

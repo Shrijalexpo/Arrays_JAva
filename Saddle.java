@@ -4,12 +4,23 @@ import java.util.Scanner;
  Allow the user to input positive integers into this matrix. Perform the following
  tasks on the matrix:
 
- i.Output the original matrix.
+ i.Output the original matrix. done
  ii.Find the SADDLE POINT for the matrix. A saddle point is an element of the matrix such that it is
  minimum element for the row to which it belongs and the maximum element for the column to which
  it belongs. Saddle point for a given matrix is always unique. If the matrix has no saddle point, output
  the message “NO SADDLE POINT”.
- iii. Sort the element along principal diagonal in ascending order using insertion sort technique.**/
+ iii. Sort the element along principal diagonal in ascending order using insertion sort technique.
+
+ pehle diagonal elements ko nikala
+ then sort kiya
+ then wapas daal diya
+
+ 1 2 3
+ 4 5 6
+ 7 8 9
+ Saddle Point = 7
+
+ **/
 
 class Saddle{
     int[][] arr;
@@ -18,7 +29,7 @@ class Saddle{
     void input()
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your pp size");
+        System.out.println("Enter your matrix size");
         len = sc.nextInt();
         arr = new int[len][len];
         sort = new int[len];
@@ -31,6 +42,9 @@ class Saddle{
 
     }
 
+    /** 1 2 3
+     4 5 6
+     7 8 9**/
     boolean saddle(){
         int min_row , col_idx = 0;
         for (int i = 0; i < len; i ++){
@@ -101,4 +115,5 @@ class Saddle{
 
     }
 }
+// Code by Shrijal Gupta (Co-Founder of Le Koders)
 

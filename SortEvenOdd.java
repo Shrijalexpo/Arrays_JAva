@@ -1,3 +1,7 @@
+/**12. Write a program in Java to store 10 different numbers in Single Dimensional Array and arrange them in
+ * such a way that all the even numbers are arranged in ascending order followed by all odd numbers.
+ */
+way that all the even numbers are arranged in ascending order followed by all odd numbers.
 import java.util.Scanner;
 class SortEvenOdd{
     int len = 10;

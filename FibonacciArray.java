@@ -1,4 +1,9 @@
-// Q9
+/**
+ * Write a program in Java to generate 20 terms of the Fibonacci series in a Single Dimensional Array.
+ * Sample Input: 1,1,2,3,5,8,13,21,
+ * Find the difference between the consecutive numbers and store them in another Single Dimensional Array.
+ * Display the elements of second array which will also possess another Fibonacci series.
+ */
 class FibonacciArray{
     int[] fibonacci = new int[20], difference = new int[19];
     void storeFibonacci(){

@@ -1,3 +1,8 @@
+/**
+ * 15. Write a program in Java to store 6 different numbers in a Single Dimensional Array. Display the difference
+ * of successive elements.
+ */
+
 import java.util.Scanner;
 class Difference{
     int len = 6;

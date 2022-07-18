@@ -18,6 +18,7 @@ import java.util.Scanner;
  */
 
 class Q3_Denomination{
+    String[] words = {"Zero ","One ","Two ","Three ","Four ","Five ","Six ","Seven ","Eight ","Nine "};
     int[] notes = {2000, 500, 200, 100, 50, 20, 10, 1};
     void denomination(int money){
         int count;
@@ -34,12 +35,21 @@ class Q3_Denomination{
             }
         }
     }
+    void toWords(int money){
+        while(money != 0){
+            System.out.print(words[money%10]);
+            money = money / 10;
+        }
+        System.out.println();
+
+    }
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
         Q3_Denomination ob = new Q3_Denomination();
         System.out.print("Money: ");
         int money = sc.nextInt();
+        ob.toWords(money);
         if (money <= 99999 && money > 0)
             ob.denomination(money);
     }

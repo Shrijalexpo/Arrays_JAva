@@ -5,7 +5,6 @@
  * (i) Fill the four corners of the square matrix by character 1.
  * (ii) Fill the boundary elements of the matrix (except the four corners) by character 2.
  * (iii) Fill the non-boundary elements of the matrix by character 3.
- * Test your program with the following data and some random data:
  */
 import java.util.Scanner;
 class Stylish_Entry {

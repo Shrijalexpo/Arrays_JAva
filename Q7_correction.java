@@ -1,5 +1,12 @@
 import java.util.Scanner;
-
+/**
+ * The result of a quiz competition is to be prepared as follows: The quiz has five questions with multiple choices
+ * (A, B, C, D) with each question carrying 1 mark for the correct answer. Design a program to accept the number of
+ * participants N such that N must be greater than 3 and less than 11. Create a double dimensional array of size
+ * (N x 5) to store the answers of each participant row-wise. Calculate the marks of each participant by matching
+ * the correct answer stored in a single dimensional array of size 5. Display the score of each participant and the
+ * participant(s) having the highest score.
+ */
 class Q7_correction{
     static Scanner sc = new Scanner(System.in);
     String[] key = new String[5];

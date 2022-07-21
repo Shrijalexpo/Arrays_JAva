@@ -21,7 +21,7 @@ class Stylish_Entry {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter matrix size: ");
         n = sc.nextInt();
-        if(n < 3 || n > 11){
+        if(n < 3 || n > 10){
             System.out.println("Erorr!!");
             System.exit(0);
         }

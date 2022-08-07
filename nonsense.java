@@ -1,11 +1,11 @@
 import java.util.Scanner;
 class nonsense {
     int M=4;
-    int[][] arr;
-    //int[][] arr = {{9,2,1,5},{8,13,8,4},{15,6,3,11},{7,12,23,8}};
+    //int[][] arr;
+    int[][] arr = {{9,2,1,5},{8,13,8,4},{15,6,3,11},{7,12,23,8}};
     public static void main(String[] args) {
         nonsense ajeeb = new nonsense();
-        ajeeb.input();
+        //ajeeb.input();
         System.out.println("Original Matrix");
         ajeeb.display();
         ajeeb.sortDrive();
@@ -40,23 +40,23 @@ class nonsense {
     }
     void sortDrive(){
         int[] temp = new int[(M - 2) * (M - 2)];
-        int k = 0;
+        int count = 0;
         for (int i = 1; i < M - 1; i++) {
             for (int j = 1; j < M - 1; j++) {
-                temp[k++] = arr[i][j];
+                temp[count++] = arr[i][j];
             }
         }
-        sort(temp,k);
-        k = 0;
+        sort(temp);
+        count = 0;
         for (int i = 1; i < M - 1; i++) {
             for (int j = 1; j < M - 1; j++) {
-                arr[i][j] = temp[k++];
+                arr[i][j] = temp[count++];
             }
         }
     }
-    void sort(int[] temp, int k){
-        for (int i = 0; i < k ; i++) {
-            for (int j = 0; j < k - i - 1; j++) {
+    void sort(int[] temp){
+        for (int i = 0; i < temp.length ; i++) {
+            for (int j = 0; j < temp.length - i - 1; j++) {
                 if (temp[j] > temp[j + 1]) {
                     int t = temp[j];
                     temp[j] = temp[j+1];

@@ -21,25 +21,20 @@ class Q25_DaysElapsed{
             date2 = temp;
         }
     }
-    void daysElapsed(){
-        int dayNum1 = 0,  dayNum2 = 0;
-        if (((parseInt(date1.substring(6))%4==0 && parseInt(date1.substring(6))%100!=0) || parseInt(date1.substring(6))%400==0) && parseInt(date1.substring(3,5)) > 2){
+    int findDayNum(String date){
+        int dayNum = 0;
+        if (((parseInt(date.substring(6))%4==0 && parseInt(date.substring(6))%100!=0) || parseInt(date.substring(6))%400==0) && parseInt(date.substring(3,5)) > 2){
             months[2] = 29;
         }
-        for (int i = 1; i < parseInt(date1.substring(3,5)); i ++){
-            dayNum1 += months[i];
+        for (int i = 1; i < parseInt(date.substring(3,5)); i ++){
+            dayNum += months[i];
         }
-        dayNum1 += parseInt(date1.substring(0,2));
+        dayNum += parseInt(date.substring(0,2));
         months[2] = 28;
-
-        if (((parseInt(date2.substring(6))%4==0 && parseInt(date2.substring(6))%100!=0) || parseInt(date2.substring(6))%400==0) && parseInt(date2.substring(3,5)) > 2){
-            months[2] = 29;
-        }
-        for (int i = 1; i < parseInt(date2.substring(3,5)); i ++){
-            dayNum2 += months[i];
-        }
-        dayNum2 += parseInt(date2.substring(0,2));
-        duration = Math.abs(dayNum2 - dayNum1);
+        return dayNum;
+    }
+    void daysElapsed(){
+        duration = Math.abs(findDayNum(date2) - findDayNum(date1));
         for (int idx = parseInt(date1.substring(6)); idx < parseInt(date2.substring(6)); idx++) {
             if((idx % 4 == 0 && idx % 100 != 0) || (idx % 400 == 0)){
                 duration ++;

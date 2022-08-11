@@ -1,11 +1,11 @@
 import java.util.Scanner;
 class nonsense {
-    int M=4;
-    //int[][] arr;
-    int[][] arr = {{9,2,1,5},{8,13,8,4},{15,6,3,11},{7,12,23,8}};
+    int M;
+    int[][] arr;
+    //int[][] arr = {{9,2,1,5},{8,13,8,4},{15,6,3,11},{7,12,23,8}};
     public static void main(String[] args) {
         nonsense ajeeb = new nonsense();
-        //ajeeb.input();
+        ajeeb.input();
         System.out.println("Original Matrix");
         ajeeb.display();
         ajeeb.sortDrive();

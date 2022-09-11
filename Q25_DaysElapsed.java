@@ -34,7 +34,7 @@ class Q25_DaysElapsed{
         return dayNum;
     }
     void daysElapsed(){
-        duration = Math.abs(findDayNum(date2) - findDayNum(date1));
+        duration = (findDayNum(date2) - findDayNum(date1));
         for (int idx = parseInt(date1.substring(6)); idx < parseInt(date2.substring(6)); idx++) {
             if((idx % 4 == 0 && idx % 100 != 0) || (idx % 400 == 0)){
                 duration ++;
